@@ -1,20 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author dyla6420
- */
+import hsa.*;
 public class Momentum {
 
-    /**
-     * @param args the command line arguments
-     */
+   
     public static void main(String[] args) {
-        // TODO code application logic here
+        Console c = new Console();
+        double mass,velocity,momentum;
+        c.print("Enter object's mass: ");
+        mass = c.readDouble();
+        c.print("Enter object's velocity: ");
+        velocity=c.readDouble();
+        //calculate answer
+        momentum = mass * velocity;
+        //show result
+        c.print("The momentum is: " + momentum);
     }
     
 }
