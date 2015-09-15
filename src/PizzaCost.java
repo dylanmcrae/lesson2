@@ -1,20 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author dyla6420
- */
+import hsa.*;
 public class PizzaCost {
-
-    /**
-     * @param args the command line arguments
-     */
+    
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        Console c = new Console();
+        double size, total;
+        int top;
+        c.print("Enter pizza diameter in inches: ");
+        size = c.readDouble();
+        c.print("Enter number of toppings: ");
+        top = c.readInt();
+        total = 1.5 + .75 + (top * .75) + (.5 * size);
+        c.print("Your total will be: $" + total);
     }
     
 }
